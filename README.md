@@ -19,5 +19,10 @@ Solvespace lib - based triangle solver with picture export
 ##### Next three double parameters are angles and sides values, remember sides go before angles
 ##### The last needed parameter is a string name of image, which will be created
 ##### p.s. default image is png, if u want svg or pdf, write this format as a sixth argument, if you want to work with .slvs file of created triangle, write "nd" as a seventh arg.
-#### All images will be saved in /images/
-#### Inconsistent parameters will cause an error alert
+
+## All images will be saved in /images/
+## Inconsistent parameters will cause an error alert
+
+
+
+##### You can also use dockerfile to build this program on any system. This way is NOT optimal, path corrections may be needed. This project and solvespace3.0 directories should be one level above the dockerfile
