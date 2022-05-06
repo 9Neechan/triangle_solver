@@ -18,6 +18,6 @@ Solvespace lib - based triangle solver with picture export
 ##### First argument codes the way of building a trianlge 1: two sides, one angle, 2:two angles, one side, 3: three sides
 ##### Next three double parameters are angles and sides values, remember sides go before angles
 ##### The last needed parameter is a string name of image, which will be created
-##### p.s. default image is png, if u want svg of pdf, write this format as a sixth argument, if you want to work with .slvs file of created triangle, write "nd" as a seventh arg.
+##### p.s. default image is png, if u want svg or pdf, write this format as a sixth argument, if you want to work with .slvs file of created triangle, write "nd" as a seventh arg.
 #### All images will be saved in /images/
 #### Inconsistent parameters will cause an error alert
