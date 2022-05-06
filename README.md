@@ -26,3 +26,7 @@ Solvespace lib - based triangle solver with picture export
 
 
 ##### You can also use dockerfile to build this program on any system. This way is NOT optimal, path corrections may be needed. This project and solvespace3.0 directories should be one level above the dockerfile
+
+
+
+##### *project made by SPbU first-year students*
