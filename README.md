@@ -5,7 +5,9 @@
 ### 0. Be sure you are using linux (ubuntu pref.) and you have cmake amd C++ compiler installed
 ### 1. Follow the instruction to manually install solvespace from their github
 ### 2. Clone this repo
-### 3a. (easy way) run ./buildscript
+### 3a. (easy way) Install and Run UNIT-Tests
+#### 1) install GTest with sudo apt-get install libgtest-dev
+#### 2) run ./buildscript
 ### OR
 ### 3b. Run these commands:
 #### 1) cd /usr/local/include && sed -i '1s/^/#include <string.h>\n/'
