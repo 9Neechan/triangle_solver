@@ -1,0 +1,20 @@
+#!/bin/bash
+
+cd build
+cmake ..
+make
+echo Project built
+
+if [[ "$1" == "tests" ]]; then
+	echo Building tests
+	cd ..
+	cd tests
+	mkdir build
+	cd build
+	cmake ..
+	make
+	echo Tests built, starting
+	./tests
+fi
+
+echo DONE
