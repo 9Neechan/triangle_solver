@@ -3,11 +3,12 @@ project(tests)
 
 set(CMAKE_CXX_STANDARD 20)
 
-find_package(GTest REQUIRED)
-find_package(Threads REQUIRED)
-
 include_directories(
         ${CMAKE_SOURCE_DIR}/include "../")
+
+
+find_package(GTest REQUIRED)
+find_package(Threads REQUIRED)
 
 
 add_executable(tests main.cpp)
