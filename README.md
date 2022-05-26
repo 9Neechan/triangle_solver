@@ -30,7 +30,7 @@ Solvespace lib - based triangle solver with picture export
 ### You can watch Doxygen-generated documentation by unpacking archive in /Documentation and running index.html in /html directory.
 
 ## What about addition testing?
-### In /Stats you can find Flamegraph and valgring reports 
+### In /Stats you can find Flamegraph and Valgrind reports 
 
 ## All images will be saved in /images/
 ## Inconsistent parameters will cause an error alert
