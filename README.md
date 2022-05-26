@@ -2,7 +2,7 @@
 Solvespace lib - based triangle solver with picture export
 
 ## How to build?
-### 0. Be sure you are using linux (ubuntu pref.)
+### 0. Be sure you are using linux (ubuntu pref.) and you have cmake amd C++ compiler installed
 ### 1. Follow the instruction to manually install solvespace from their github
 ### 2. Clone this repo
 ### 3a. (easy way) run ./buildscript
