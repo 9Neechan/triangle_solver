@@ -28,6 +28,7 @@
 #### p.s. default image is png, if u want svg or pdf, write this format as a sixth argument, if you want to work with .slvs file of created triangle, write "nd" as a seventh arg.
 
 ## How to run tests? (UNIT-testing with GTest)
+#### GTest lib required
 ### 0. cd to this repo directory
 ### 1. cd tests && mkdir build && cd build && cmake .. && make && ./tests
 
