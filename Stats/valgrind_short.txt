@@ -1,0 +1,51 @@
+==35968== Memcheck, a memory error detector
+==35968== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==35968== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==35968== Command: ./triangle 3 1 1 1 valshort
+==35968== 
+../valshort.slvsGENERATED
+==35968== 
+==35968== HEAP SUMMARY:
+==35968==     in use at exit: 6,600 bytes in 4 blocks
+==35968==   total heap usage: 994 allocs, 990 frees, 249,580 bytes allocated
+==35968== 
+==35968== 200 bytes in 1 blocks are still reachable in loss record 1 of 4
+==35968==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==35968==    by 0x10CF7C: CheckMalloc(unsigned long) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D278: start() (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10E4A7: solve3(double, double, double) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D1B4: ChooseMethodAndRun(char const*, char const*, char const*, char const*) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10C782: main (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968== 
+==35968== 800 bytes in 1 blocks are still reachable in loss record 2 of 4
+==35968==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==35968==    by 0x10CF7C: CheckMalloc(unsigned long) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D245: start() (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10E4A7: solve3(double, double, double) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D1B4: ChooseMethodAndRun(char const*, char const*, char const*, char const*) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10C782: main (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968== 
+==35968== 2,800 bytes in 1 blocks are still reachable in loss record 3 of 4
+==35968==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==35968==    by 0x10CF7C: CheckMalloc(unsigned long) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D256: start() (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10E4A7: solve3(double, double, double) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D1B4: ChooseMethodAndRun(char const*, char const*, char const*, char const*) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10C782: main (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968== 
+==35968== 2,800 bytes in 1 blocks are still reachable in loss record 4 of 4
+==35968==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==35968==    by 0x10CF7C: CheckMalloc(unsigned long) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D267: start() (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10E4A7: solve3(double, double, double) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10D1B4: ChooseMethodAndRun(char const*, char const*, char const*, char const*) (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968==    by 0x10C782: main (in /home/unicorntowa/Downloads/built/build/triangle)
+==35968== 
+==35968== LEAK SUMMARY:
+==35968==    definitely lost: 0 bytes in 0 blocks
+==35968==    indirectly lost: 0 bytes in 0 blocks
+==35968==      possibly lost: 0 bytes in 0 blocks
+==35968==    still reachable: 6,600 bytes in 4 blocks
+==35968==         suppressed: 0 bytes in 0 blocks
+==35968== 
+==35968== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

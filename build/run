@@ -1,0 +1,26 @@
+#!/bin/bash
+#
+./triangle "$1" "$2" "$3" "$4" "$5"
+
+if [[ "$?" != "0" ]]; then
+	echo "Incompatible parameters... exiting"
+	exit 0
+fi
+
+./usr/triangle/triangle-release/build/triangle "$1" "$2" "$3" "$4" "$5" &>-
+if [[ "$6" == "svg" ]]; then
+	solvespace-cli "export-view" "-v" "front" "-o" "../images/$5.svg" "../$5.slvs"
+elif [[ "$6" == "pdf" ]]; then
+	solvespace-cli "export-view" "-v" "front" "-o" "../images/$5.pdf" "../$5.slvs"
+else
+	solvespace-cli thumbnail --output "../images/$5.png" --size "1440x1440" --view "front" "../$5.slvs"
+fi
+
+if [[ "$7" == "nd" ]]; then
+	echo "$5.slvs saved"
+else
+	rm -rf "../$5.slvs"
+	echo "$5.slvs deleted"
+fi
+	
+

@@ -1,0 +1,17 @@
+#!/bin/bash
+
+cd build
+cmake ..
+make
+echo Project built
+
+cd ..
+cd tests
+mkdir build
+cd build
+cmake ..
+make
+
+echo Tests built, starting
+./tests
+echo DONE

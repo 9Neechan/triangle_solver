@@ -1,0 +1,2933 @@
+==36038== Memcheck, a memory error detector
+==36038== Copyright (C) 2002-2022, and GNU GPL'd, by Julian Seward et al.
+==36038== Using Valgrind-3.19.0 and LibVEX; rerun with -h for copyright info
+==36038== Command: ./script 3 1 1 1 vallong
+==36038== 
+../vallong.slvsGENERATED
+==36065== 
+==36065== HEAP SUMMARY:
+==36065==     in use at exit: 51,663 bytes in 835 blocks
+==36065==   total heap usage: 1,481 allocs, 646 frees, 104,651 bytes allocated
+==36065== 
+==36065== 1 bytes in 1 blocks are still reachable in loss record 1 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1920F9: set_locale_var (in /usr/bin/bash)
+==36065==    by 0x192302: set_default_lang (in /usr/bin/bash)
+==36065==    by 0x137549: main (in /usr/bin/bash)
+==36065== 
+==36065== 2 bytes in 1 blocks are still reachable in loss record 2 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15844D: ??? (in /usr/bin/bash)
+==36065==    by 0x15929E: adjust_shell_level (in /usr/bin/bash)
+==36065==    by 0x15AC10: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 2 bytes in 1 blocks are still reachable in loss record 3 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1B7D71: itos (in /usr/bin/bash)
+==36065==    by 0x15C13B: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x15017F: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x14FDAD: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 2 bytes in 2 blocks are still reachable in loss record 4 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DE1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15806D: ??? (in /usr/bin/bash)
+==36065==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4 bytes in 1 blocks are still reachable in loss record 5 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4 bytes in 1 blocks are still reachable in loss record 6 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4 bytes in 1 blocks are still reachable in loss record 7 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AB7A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4 bytes in 1 blocks are still reachable in loss record 8 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 5 bytes in 1 blocks are still reachable in loss record 9 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x159628: set_ppid (in /usr/bin/bash)
+==36065==    by 0x15AC15: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 5 bytes in 1 blocks are still reachable in loss record 10 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AE90: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 7 bytes in 1 blocks are still reachable in loss record 11 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x138ECE: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 7 bytes in 1 blocks are still reachable in loss record 12 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AC2A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 7 bytes in 1 blocks are still reachable in loss record 13 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AC4A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 8 bytes in 1 blocks are still reachable in loss record 14 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1555B6: ??? (in /usr/bin/bash)
+==36065==    by 0x159B3E: ??? (in /usr/bin/bash)
+==36065==    by 0x191D94: ??? (in /usr/bin/bash)
+==36065==    by 0x192108: set_locale_var (in /usr/bin/bash)
+==36065==    by 0x192302: set_default_lang (in /usr/bin/bash)
+==36065==    by 0x137549: main (in /usr/bin/bash)
+==36065== 
+==36065== 8 bytes in 1 blocks are still reachable in loss record 15 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15844D: ??? (in /usr/bin/bash)
+==36065==    by 0x14C342: ??? (in /usr/bin/bash)
+==36065==    by 0x15139C: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 8 bytes in 1 blocks are still reachable in loss record 16 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36065==    by 0x16076E: ??? (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 9 bytes in 1 blocks are still reachable in loss record 17 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AB95: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 9 bytes in 1 blocks are still reachable in loss record 18 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 9 bytes in 1 blocks are still reachable in loss record 19 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x1AC4B0: set_bashopts (in /usr/bin/bash)
+==36065==    by 0x138E1C: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 9 bytes in 1 blocks are still reachable in loss record 20 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x13816C: main (in /usr/bin/bash)
+==36065== 
+==36065== 9 bytes in 1 blocks are still reachable in loss record 21 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x13A626: init_yy_io (in /usr/bin/bash)
+==36065==    by 0x137DC4: main (in /usr/bin/bash)
+==36065== 
+==36065== 9 bytes in 2 blocks are still reachable in loss record 22 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 10 bytes in 1 blocks are still reachable in loss record 23 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x1A76E0: set_shellopts (in /usr/bin/bash)
+==36065==    by 0x138DFD: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 10 bytes in 1 blocks are still reachable in loss record 24 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36065==    by 0x13FAB0: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 11 bytes in 1 blocks are still reachable in loss record 25 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 11 bytes in 1 blocks are still reachable in loss record 26 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 12 bytes in 1 blocks are still reachable in loss record 27 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x191DDE: set_lang (in /usr/bin/bash)
+==36065==    by 0x137549: main (in /usr/bin/bash)
+==36065== 
+==36065== 13 bytes in 1 blocks are still reachable in loss record 28 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AECB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 13 bytes in 2 blocks are still reachable in loss record 29 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AB7A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 14 bytes in 1 blocks are still reachable in loss record 30 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 14 bytes in 1 blocks are still reachable in loss record 31 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 14 bytes in 2 blocks are still reachable in loss record 32 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AC2A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 33 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x14789D: tilde_initialize (in /usr/bin/bash)
+==36065==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 34 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1478EE: tilde_initialize (in /usr/bin/bash)
+==36065==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 35 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36065==    by 0x157F8A: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 36 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36065==    by 0x157FA9: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 37 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36065==    by 0x157F51: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 38 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36065==    by 0x158DEF: make_new_assoc_variable (in /usr/bin/bash)
+==36065==    by 0x15B6A9: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 39 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36065==    by 0x158DEF: make_new_assoc_variable (in /usr/bin/bash)
+==36065==    by 0x15B67B: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 40 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36065==    by 0x141419: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 41 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x14D1B8: new_fd_bitmap (in /usr/bin/bash)
+==36065==    by 0x1519A2: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 42 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36065==    by 0x15C305: copy_word_list (in /usr/bin/bash)
+==36065==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 43 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36065==    by 0x176AFB: ??? (in /usr/bin/bash)
+==36065==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 1 blocks are still reachable in loss record 44 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36065==    by 0x1773AC: ??? (in /usr/bin/bash)
+==36065==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 3 blocks are still reachable in loss record 45 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183473: array_create_element (in /usr/bin/bash)
+==36065==    by 0x18367F: ??? (in /usr/bin/bash)
+==36065==    by 0x137C8C: main (in /usr/bin/bash)
+==36065== 
+==36065== 16 bytes in 5 blocks are still reachable in loss record 46 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x19AAF4: remember_args (in /usr/bin/bash)
+==36065==    by 0x13890E: ??? (in /usr/bin/bash)
+==36065==    by 0x137AA4: main (in /usr/bin/bash)
+==36065== 
+==36065== 18 bytes in 2 blocks are still reachable in loss record 47 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AE90: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 23 bytes in 2 blocks are still reachable in loss record 48 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x158DE5: make_new_assoc_variable (in /usr/bin/bash)
+==36065==    by 0x15B6A9: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 24 bytes in 1 blocks are still reachable in loss record 49 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x14787D: tilde_initialize (in /usr/bin/bash)
+==36065==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 24 bytes in 1 blocks are still reachable in loss record 50 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1478CE: tilde_initialize (in /usr/bin/bash)
+==36065==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 24 bytes in 1 blocks are still reachable in loss record 51 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148A4C: make_bare_simple_command (in /usr/bin/bash)
+==36065==    by 0x148B19: make_simple_command (in /usr/bin/bash)
+==36065==    by 0x14353F: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 25 bytes in 3 blocks are still reachable in loss record 52 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15ABA8: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 25 bytes in 5 blocks are still reachable in loss record 53 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x140C77: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 27 bytes in 3 blocks are still reachable in loss record 54 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 28 bytes in 3 blocks are still reachable in loss record 55 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 30 bytes in 4 blocks are still reachable in loss record 56 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15ABA8: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 57 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 58 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 59 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B7AE: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 60 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 61 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 62 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 63 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 64 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B30B: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 65 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B32A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 66 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B349: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 67 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B368: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 68 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 69 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148A3F: make_bare_simple_command (in /usr/bin/bash)
+==36065==    by 0x148B19: make_simple_command (in /usr/bin/bash)
+==36065==    by 0x14353F: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 70 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x14D1E7: new_fd_bitmap (in /usr/bin/bash)
+==36065==    by 0x1519A2: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 71 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36065==    by 0x17F2CE: begin_unwind_frame (in /usr/bin/bash)
+==36065==    by 0x1519B1: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 72 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36065==    by 0x17F4C9: add_unwind_protect (in /usr/bin/bash)
+==36065==    by 0x1519C2: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 73 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36065==    by 0x17F2CE: begin_unwind_frame (in /usr/bin/bash)
+==36065==    by 0x14FB5D: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 74 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36065==    by 0x17F4C9: add_unwind_protect (in /usr/bin/bash)
+==36065==    by 0x14FBF2: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 75 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 32 bytes in 1 blocks are still reachable in loss record 76 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x183987: array_insert (in /usr/bin/bash)
+==36065==    by 0x15C09E: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 37 bytes in 6 blocks are still reachable in loss record 77 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183473: array_create_element (in /usr/bin/bash)
+==36065==    by 0x183987: array_insert (in /usr/bin/bash)
+==36065==    by 0x15AF24: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 38 bytes in 4 blocks are still reachable in loss record 78 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15806D: ??? (in /usr/bin/bash)
+==36065==    by 0x15AE90: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 79 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157EB6: new_var_context (in /usr/bin/bash)
+==36065==    by 0x157F68: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 80 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x19AEB9: set_working_directory (in /usr/bin/bash)
+==36065==    by 0x15958C: set_pwd (in /usr/bin/bash)
+==36065==    by 0x15AAEE: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 81 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 82 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 83 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B368: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 84 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 40 bytes in 1 blocks are still reachable in loss record 85 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 47 bytes in 1 blocks are still reachable in loss record 86 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x192F50: search_for_command (in /usr/bin/bash)
+==36065==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36065==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 47 bytes in 4 blocks are still reachable in loss record 87 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B349: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 48 bytes in 1 blocks are still reachable in loss record 88 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 48 bytes in 1 blocks are still reachable in loss record 89 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AB7A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 48 bytes in 1 blocks are still reachable in loss record 90 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36065==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36065==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 48 bytes in 1 blocks are still reachable in loss record 91 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148E43: make_redirection (in /usr/bin/bash)
+==36065==    by 0x143604: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 49 bytes in 1 blocks are still reachable in loss record 92 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157DFF: update_export_env_inplace (in /usr/bin/bash)
+==36065==    by 0x14DFD9: ??? (in /usr/bin/bash)
+==36065==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 49 bytes in 2 blocks are still reachable in loss record 93 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x141429: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 56 bytes in 1 blocks are definitely lost in loss record 94 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1BAC65: strvec_from_word_list (in /usr/bin/bash)
+==36065==    by 0x14E343: ??? (in /usr/bin/bash)
+==36065==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 60 bytes in 6 blocks are still reachable in loss record 95 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 61 bytes in 9 blocks are still reachable in loss record 96 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15806D: ??? (in /usr/bin/bash)
+==36065==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 64 bytes in 1 blocks are still reachable in loss record 97 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1665CB: stop_pipeline (in /usr/bin/bash)
+==36065==    by 0x151044: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 74 bytes in 6 blocks are still reachable in loss record 98 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x16E688: dequote_string (in /usr/bin/bash)
+==36065==    by 0x17B104: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 77 bytes in 1 blocks are still reachable in loss record 99 of 140
+==36065==    at 0x4A3DE3D: realloc (vg_replace_malloc.c:1437)
+==36065==    by 0x198558: xrealloc (in /usr/bin/bash)
+==36065==    by 0x13A097: ??? (in /usr/bin/bash)
+==36065==    by 0x13C688: ??? (in /usr/bin/bash)
+==36065==    by 0x13F5C9: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 77 bytes in 1 blocks are still reachable in loss record 100 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x14F948: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 77 bytes in 1 blocks are still reachable in loss record 101 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x15133F: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 80 bytes in 2 blocks are still reachable in loss record 102 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 80 bytes in 2 blocks are still reachable in loss record 103 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36065==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B32A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 80 bytes in 5 blocks are still reachable in loss record 104 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36065==    by 0x140C67: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 80 bytes in 5 blocks are still reachable in loss record 105 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36065==    by 0x15C2D4: copy_word_list (in /usr/bin/bash)
+==36065==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 96 bytes in 2 blocks are still reachable in loss record 106 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x1A76E0: set_shellopts (in /usr/bin/bash)
+==36065==    by 0x138DFD: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 96 bytes in 3 blocks are still reachable in loss record 107 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x18367F: ??? (in /usr/bin/bash)
+==36065==    by 0x137C8C: main (in /usr/bin/bash)
+==36065== 
+==36065== 96 bytes in 6 blocks are still reachable in loss record 108 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36065==    by 0x148AB8: make_simple_command (in /usr/bin/bash)
+==36065==    by 0x14353F: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 96 bytes in 6 blocks are still reachable in loss record 109 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36065==    by 0x148072: make_bare_word (in /usr/bin/bash)
+==36065==    by 0x15C2F5: copy_word_list (in /usr/bin/bash)
+==36065==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 96 bytes in 6 blocks are still reachable in loss record 110 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36065==    by 0x176BD0: ??? (in /usr/bin/bash)
+==36065==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 96 bytes in 6 blocks are still reachable in loss record 111 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36065==    by 0x174FE1: ??? (in /usr/bin/bash)
+==36065==    by 0x176148: ??? (in /usr/bin/bash)
+==36065==    by 0x17742D: ??? (in /usr/bin/bash)
+==36065==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36065==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 119 bytes in 11 blocks are still reachable in loss record 112 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B112: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 128 bytes in 1 blocks are still reachable in loss record 113 of 140
+==36065==    at 0x4A3DE3D: realloc (vg_replace_malloc.c:1437)
+==36065==    by 0x198558: xrealloc (in /usr/bin/bash)
+==36065==    by 0x14935E: ??? (in /usr/bin/bash)
+==36065==    by 0x149402: ??? (in /usr/bin/bash)
+==36065==    by 0x1496BF: ??? (in /usr/bin/bash)
+==36065==    by 0x14AE57: print_simple_command (in /usr/bin/bash)
+==36065==    by 0x14F903: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 133 bytes in 13 blocks are still reachable in loss record 114 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B7AE: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 185 bytes in 2 blocks are still reachable in loss record 115 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15806D: ??? (in /usr/bin/bash)
+==36065==    by 0x1A76E0: set_shellopts (in /usr/bin/bash)
+==36065==    by 0x138DFD: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 192 bytes in 4 blocks are still reachable in loss record 116 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AC4A: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 192 bytes in 6 blocks are still reachable in loss record 117 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36065==    by 0x183987: array_insert (in /usr/bin/bash)
+==36065==    by 0x15AF24: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 256 bytes in 1 blocks are still reachable in loss record 118 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36065==    by 0x13C3B7: ??? (in /usr/bin/bash)
+==36065==    by 0x13F5C9: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 281 bytes in 1 blocks are definitely lost in loss record 119 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x19196E: set_default_locale (in /usr/bin/bash)
+==36065==    by 0x136C8A: main (in /usr/bin/bash)
+==36065== 
+==36065== 288 bytes in 6 blocks are still reachable in loss record 120 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AB95: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 320 bytes in 10 blocks are still reachable in loss record 121 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36065==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36065==    by 0x15B30B: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 352 bytes in 11 blocks are still reachable in loss record 122 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B112: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 496 bytes in 1 blocks are still reachable in loss record 123 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36065==    by 0x140A3A: ??? (in /usr/bin/bash)
+==36065==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36065==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36065==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36065==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 912 bytes in 1 blocks are still reachable in loss record 124 of 140
+==36065==    at 0x4A3DE3D: realloc (vg_replace_malloc.c:1437)
+==36065==    by 0x198558: xrealloc (in /usr/bin/bash)
+==36065==    by 0x159B62: ??? (in /usr/bin/bash)
+==36065==    by 0x14DFD1: ??? (in /usr/bin/bash)
+==36065==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 976 bytes in 76 blocks are still reachable in loss record 125 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 976 bytes in 76 blocks are still reachable in loss record 126 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x157FED: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 1,024 bytes in 1 blocks are still reachable in loss record 127 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x147FC1: cmd_init (in /usr/bin/bash)
+==36065==    by 0x137690: main (in /usr/bin/bash)
+==36065== 
+==36065== 1,024 bytes in 1 blocks are still reachable in loss record 128 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x147FDD: cmd_init (in /usr/bin/bash)
+==36065==    by 0x137690: main (in /usr/bin/bash)
+==36065== 
+==36065== 1,024 bytes in 1 blocks are still reachable in loss record 129 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17F291: uwp_init (in /usr/bin/bash)
+==36065==    by 0x137695: main (in /usr/bin/bash)
+==36065== 
+==36065== 1,056 bytes in 22 blocks are still reachable in loss record 130 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 2,048 bytes in 2 blocks are still reachable in loss record 131 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B70C: hash_create (in /usr/bin/bash)
+==36065==    by 0x158DEF: make_new_assoc_variable (in /usr/bin/bash)
+==36065==    by 0x15B6A9: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 2,200 bytes in 1 blocks are still reachable in loss record 132 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36065==    by 0x17E446: ??? (in /usr/bin/bash)
+==36065==    by 0x17E9B8: fd_to_buffered_stream (in /usr/bin/bash)
+==36065==    by 0x17EF54: with_input_from_buffered_stream (in /usr/bin/bash)
+==36065==    by 0x137DC4: main (in /usr/bin/bash)
+==36065== 
+==36065== 2,816 bytes in 88 blocks are still reachable in loss record 133 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36065==    by 0x158008: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 3,046 bytes in 72 blocks are still reachable in loss record 134 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36065==    by 0x15806D: ??? (in /usr/bin/bash)
+==36065==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 3,648 bytes in 76 blocks are still reachable in loss record 135 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36065==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36065==    by 0x15805C: ??? (in /usr/bin/bash)
+==36065==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4,016 bytes in 74 blocks are still reachable in loss record 136 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x15AD62: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4,024 bytes in 75 blocks are still reachable in loss record 137 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x155585: ??? (in /usr/bin/bash)
+==36065==    by 0x159B3E: ??? (in /usr/bin/bash)
+==36065==    by 0x14DFD1: ??? (in /usr/bin/bash)
+==36065==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36065==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36065==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36065==    by 0x137EF8: main (in /usr/bin/bash)
+==36065== 
+==36065== 4,096 bytes in 1 blocks are still reachable in loss record 138 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36065==    by 0x157FA9: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 4,096 bytes in 1 blocks are still reachable in loss record 139 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36065==    by 0x157F51: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== 8,192 bytes in 1 blocks are still reachable in loss record 140 of 140
+==36065==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36065==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36065==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36065==    by 0x157F8A: ??? (in /usr/bin/bash)
+==36065==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36065==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36065==    by 0x137544: main (in /usr/bin/bash)
+==36065== 
+==36065== LEAK SUMMARY:
+==36065==    definitely lost: 337 bytes in 2 blocks
+==36065==    indirectly lost: 0 bytes in 0 blocks
+==36065==      possibly lost: 0 bytes in 0 blocks
+==36065==    still reachable: 51,326 bytes in 833 blocks
+==36065==         suppressed: 0 bytes in 0 blocks
+==36065== 
+==36065== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)
+Missing (absent) translation for group-name'#references'
+Missing (absent) translation for group-name'sketch-in-plane'
+Written '../images/vallong.png'.
+vallong.slvs deleted
+==36038== 
+==36038== HEAP SUMMARY:
+==36038==     in use at exit: 53,517 bytes in 883 blocks
+==36038==   total heap usage: 1,708 allocs, 825 frees, 93,992 bytes allocated
+==36038== 
+==36038== 1 bytes in 1 blocks are still reachable in loss record 1 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1920F9: set_locale_var (in /usr/bin/bash)
+==36038==    by 0x192302: set_default_lang (in /usr/bin/bash)
+==36038==    by 0x137549: main (in /usr/bin/bash)
+==36038== 
+==36038== 2 bytes in 1 blocks are still reachable in loss record 2 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15844D: ??? (in /usr/bin/bash)
+==36038==    by 0x15929E: adjust_shell_level (in /usr/bin/bash)
+==36038==    by 0x15AC10: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 2 bytes in 1 blocks are still reachable in loss record 3 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1B7D71: itos (in /usr/bin/bash)
+==36038==    by 0x15C13B: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x15172F: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x153755: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 2 bytes in 2 blocks are still reachable in loss record 4 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DE1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15806D: ??? (in /usr/bin/bash)
+==36038==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 3 bytes in 1 blocks are still reachable in loss record 5 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B568: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x15371F: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 4 bytes in 1 blocks are still reachable in loss record 6 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 4 bytes in 1 blocks are still reachable in loss record 7 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 4 bytes in 1 blocks are still reachable in loss record 8 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AB7A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 4 bytes in 1 blocks are still reachable in loss record 9 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 5 bytes in 1 blocks are still reachable in loss record 10 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x159628: set_ppid (in /usr/bin/bash)
+==36038==    by 0x15AC15: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 5 bytes in 1 blocks are still reachable in loss record 11 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AE90: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 7 bytes in 1 blocks are still reachable in loss record 12 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x138ECE: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 7 bytes in 1 blocks are still reachable in loss record 13 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AC2A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 7 bytes in 1 blocks are still reachable in loss record 14 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AC4A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 8 bytes in 1 blocks are still reachable in loss record 15 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1555B6: ??? (in /usr/bin/bash)
+==36038==    by 0x159B3E: ??? (in /usr/bin/bash)
+==36038==    by 0x191D94: ??? (in /usr/bin/bash)
+==36038==    by 0x192108: set_locale_var (in /usr/bin/bash)
+==36038==    by 0x192302: set_default_lang (in /usr/bin/bash)
+==36038==    by 0x137549: main (in /usr/bin/bash)
+==36038== 
+==36038== 8 bytes in 1 blocks are still reachable in loss record 16 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36038==    by 0x16076E: ??? (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 9 bytes in 1 blocks are still reachable in loss record 17 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AB95: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 9 bytes in 1 blocks are still reachable in loss record 18 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 9 bytes in 1 blocks are still reachable in loss record 19 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x1AC4B0: set_bashopts (in /usr/bin/bash)
+==36038==    by 0x138E1C: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 9 bytes in 1 blocks are still reachable in loss record 20 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x13816C: main (in /usr/bin/bash)
+==36038== 
+==36038== 9 bytes in 1 blocks are still reachable in loss record 21 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x13A626: init_yy_io (in /usr/bin/bash)
+==36038==    by 0x137DC4: main (in /usr/bin/bash)
+==36038== 
+==36038== 9 bytes in 2 blocks are still reachable in loss record 22 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 10 bytes in 1 blocks are still reachable in loss record 23 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x1A76E0: set_shellopts (in /usr/bin/bash)
+==36038==    by 0x138DFD: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 10 bytes in 1 blocks are still reachable in loss record 24 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36038==    by 0x13FAB0: ??? (in /usr/bin/bash)
+==36038==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 11 bytes in 1 blocks are still reachable in loss record 25 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 11 bytes in 1 blocks are still reachable in loss record 26 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 12 bytes in 1 blocks are still reachable in loss record 27 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x191DDE: set_lang (in /usr/bin/bash)
+==36038==    by 0x137549: main (in /usr/bin/bash)
+==36038== 
+==36038== 12 bytes in 1 blocks are still reachable in loss record 28 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B514: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x15371F: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 13 bytes in 1 blocks are still reachable in loss record 29 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AECB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 13 bytes in 2 blocks are still reachable in loss record 30 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AB7A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 14 bytes in 1 blocks are still reachable in loss record 31 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 14 bytes in 1 blocks are still reachable in loss record 32 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 14 bytes in 1 blocks are still reachable in loss record 33 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157DFF: update_export_env_inplace (in /usr/bin/bash)
+==36038==    by 0x14DFD9: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x15371F: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 14 bytes in 2 blocks are still reachable in loss record 34 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AC2A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 15 bytes in 1 blocks are still reachable in loss record 35 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B568: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 36 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x14789D: tilde_initialize (in /usr/bin/bash)
+==36038==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 37 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1478EE: tilde_initialize (in /usr/bin/bash)
+==36038==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 38 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36038==    by 0x157F8A: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 39 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36038==    by 0x157FA9: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 40 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36038==    by 0x157F51: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 41 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36038==    by 0x158DEF: make_new_assoc_variable (in /usr/bin/bash)
+==36038==    by 0x15B6A9: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 42 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36038==    by 0x158DEF: make_new_assoc_variable (in /usr/bin/bash)
+==36038==    by 0x15B67B: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 43 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x15C305: copy_word_list (in /usr/bin/bash)
+==36038==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 44 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x176AFB: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 45 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x1773AC: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 46 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x1773AC: ??? (in /usr/bin/bash)
+==36038==    by 0x177EBA: ??? (in /usr/bin/bash)
+==36038==    by 0x178A3D: cond_expand_word (in /usr/bin/bash)
+==36038==    by 0x14C615: ??? (in /usr/bin/bash)
+==36038==    by 0x14E8FE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDAD: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 47 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x176BD0: ??? (in /usr/bin/bash)
+==36038==    by 0x177EBA: ??? (in /usr/bin/bash)
+==36038==    by 0x178A3D: cond_expand_word (in /usr/bin/bash)
+==36038==    by 0x14C615: ??? (in /usr/bin/bash)
+==36038==    by 0x14E8FE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDAD: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 1 blocks are still reachable in loss record 48 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B6F6: hash_create (in /usr/bin/bash)
+==36038==    by 0x17B599: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 3 blocks are still reachable in loss record 49 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183473: array_create_element (in /usr/bin/bash)
+==36038==    by 0x18367F: ??? (in /usr/bin/bash)
+==36038==    by 0x137C8C: main (in /usr/bin/bash)
+==36038== 
+==36038== 16 bytes in 5 blocks are still reachable in loss record 50 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x19AAF4: remember_args (in /usr/bin/bash)
+==36038==    by 0x13890E: ??? (in /usr/bin/bash)
+==36038==    by 0x137AA4: main (in /usr/bin/bash)
+==36038== 
+==36038== 18 bytes in 2 blocks are still reachable in loss record 51 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AE90: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 21 bytes in 1 blocks are still reachable in loss record 52 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15844D: ??? (in /usr/bin/bash)
+==36038==    by 0x14C342: ??? (in /usr/bin/bash)
+==36038==    by 0x150B52: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x153755: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 23 bytes in 1 blocks are still reachable in loss record 53 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x14F948: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x153755: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 23 bytes in 2 blocks are still reachable in loss record 54 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x158DE5: make_new_assoc_variable (in /usr/bin/bash)
+==36038==    by 0x15B6A9: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 24 bytes in 1 blocks are still reachable in loss record 55 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x14787D: tilde_initialize (in /usr/bin/bash)
+==36038==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 24 bytes in 1 blocks are still reachable in loss record 56 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1478CE: tilde_initialize (in /usr/bin/bash)
+==36038==    by 0x138DA5: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 25 bytes in 3 blocks are still reachable in loss record 57 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15ABA8: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 27 bytes in 3 blocks are still reachable in loss record 58 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 28 bytes in 3 blocks are still reachable in loss record 59 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 30 bytes in 1 blocks are still reachable in loss record 60 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B514: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 30 bytes in 4 blocks are still reachable in loss record 61 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15ABA8: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 62 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 63 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 64 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B7AE: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 65 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 66 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 67 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 68 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 69 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B30B: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 70 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B32A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 71 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B349: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 72 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B368: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 73 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 74 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36038==    by 0x17F4C9: add_unwind_protect (in /usr/bin/bash)
+==36038==    by 0x1519C2: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 75 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36038==    by 0x17F4C9: add_unwind_protect (in /usr/bin/bash)
+==36038==    by 0x14FBF2: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 76 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x1834ED: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 77 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x183987: array_insert (in /usr/bin/bash)
+==36038==    by 0x15C09E: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 78 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36038==    by 0x17F2CE: begin_unwind_frame (in /usr/bin/bash)
+==36038==    by 0x1519B1: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDAD: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 79 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36038==    by 0x17F2CE: begin_unwind_frame (in /usr/bin/bash)
+==36038==    by 0x14FB5D: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 80 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x17B4EF: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 81 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x17B4EF: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x15371F: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 82 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17F66E: unwind_protect_mem (in /usr/bin/bash)
+==36038==    by 0x14FD00: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x153755: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 1 blocks are still reachable in loss record 83 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17F66E: unwind_protect_mem (in /usr/bin/bash)
+==36038==    by 0x14FD11: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x153755: ??? (in /usr/bin/bash)
+==36038==    by 0x14F063: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 2 blocks are still reachable in loss record 84 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x176AFB: ??? (in /usr/bin/bash)
+==36038==    by 0x17742D: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 32 bytes in 2 blocks are still reachable in loss record 85 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B581: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 37 bytes in 6 blocks are still reachable in loss record 86 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183473: array_create_element (in /usr/bin/bash)
+==36038==    by 0x183987: array_insert (in /usr/bin/bash)
+==36038==    by 0x15AF24: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 38 bytes in 4 blocks are still reachable in loss record 87 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15806D: ??? (in /usr/bin/bash)
+==36038==    by 0x15AE90: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 88 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157EB6: new_var_context (in /usr/bin/bash)
+==36038==    by 0x157F68: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 89 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x19AEB9: set_working_directory (in /usr/bin/bash)
+==36038==    by 0x15958C: set_pwd (in /usr/bin/bash)
+==36038==    by 0x15AAEE: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 90 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15AEE3: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 91 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 92 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B368: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 93 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15B64D: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 40 bytes in 1 blocks are still reachable in loss record 94 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 47 bytes in 4 blocks are still reachable in loss record 95 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B349: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 48 bytes in 1 blocks are still reachable in loss record 96 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 48 bytes in 1 blocks are still reachable in loss record 97 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AB7A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 48 bytes in 1 blocks are still reachable in loss record 98 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17E939: fd_to_buffered_stream (in /usr/bin/bash)
+==36038==    by 0x17EF54: with_input_from_buffered_stream (in /usr/bin/bash)
+==36038==    by 0x137DC4: main (in /usr/bin/bash)
+==36038== 
+==36038== 48 bytes in 1 blocks are still reachable in loss record 99 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x15C10B: set_pipestatus_array (in /usr/bin/bash)
+==36038==    by 0x164A1D: wait_for (in /usr/bin/bash)
+==36038==    by 0x151215: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 48 bytes in 3 blocks are still reachable in loss record 100 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x176AFB: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 48 bytes in 3 blocks are still reachable in loss record 101 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x1773AC: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 60 bytes in 6 blocks are still reachable in loss record 102 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2CD: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 61 bytes in 9 blocks are still reachable in loss record 103 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15806D: ??? (in /usr/bin/bash)
+==36038==    by 0x15B564: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 64 bytes in 1 blocks are still reachable in loss record 104 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1665CB: stop_pipeline (in /usr/bin/bash)
+==36038==    by 0x151044: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 64 bytes in 2 blocks are still reachable in loss record 105 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36038==    by 0x17F2CE: begin_unwind_frame (in /usr/bin/bash)
+==36038==    by 0x1519B1: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 64 bytes in 2 blocks are still reachable in loss record 106 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17EFE9: ??? (in /usr/bin/bash)
+==36038==    by 0x17F4C9: add_unwind_protect (in /usr/bin/bash)
+==36038==    by 0x1519C2: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDAD: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 80 bytes in 2 blocks are still reachable in loss record 107 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B2EC: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 80 bytes in 2 blocks are still reachable in loss record 108 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1834BF: array_create (in /usr/bin/bash)
+==36038==    by 0x158D5D: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B32A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 80 bytes in 5 blocks are still reachable in loss record 109 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x15C2D4: copy_word_list (in /usr/bin/bash)
+==36038==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 96 bytes in 2 blocks are still reachable in loss record 110 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x1A76E0: set_shellopts (in /usr/bin/bash)
+==36038==    by 0x138DFD: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 96 bytes in 3 blocks are still reachable in loss record 111 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x18367F: ??? (in /usr/bin/bash)
+==36038==    by 0x137C8C: main (in /usr/bin/bash)
+==36038== 
+==36038== 96 bytes in 6 blocks are still reachable in loss record 112 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x141419: ??? (in /usr/bin/bash)
+==36038==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 96 bytes in 6 blocks are still reachable in loss record 113 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x148072: make_bare_word (in /usr/bin/bash)
+==36038==    by 0x15C2F5: copy_word_list (in /usr/bin/bash)
+==36038==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 96 bytes in 6 blocks are still reachable in loss record 114 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x176BD0: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 102 bytes in 1 blocks are still reachable in loss record 115 of 152
+==36038==    at 0x4A3DE3D: realloc (vg_replace_malloc.c:1437)
+==36038==    by 0x198558: xrealloc (in /usr/bin/bash)
+==36038==    by 0x13A097: ??? (in /usr/bin/bash)
+==36038==    by 0x13C688: ??? (in /usr/bin/bash)
+==36038==    by 0x13F5C9: ??? (in /usr/bin/bash)
+==36038==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 112 bytes in 7 blocks are still reachable in loss record 116 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x148072: make_bare_word (in /usr/bin/bash)
+==36038==    by 0x15C2C4: copy_word_list (in /usr/bin/bash)
+==36038==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 119 bytes in 11 blocks are still reachable in loss record 117 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B112: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 128 bytes in 1 blocks are still reachable in loss record 118 of 152
+==36038==    at 0x4A3DE3D: realloc (vg_replace_malloc.c:1437)
+==36038==    by 0x198558: xrealloc (in /usr/bin/bash)
+==36038==    by 0x14935E: ??? (in /usr/bin/bash)
+==36038==    by 0x149402: ??? (in /usr/bin/bash)
+==36038==    by 0x1496BF: ??? (in /usr/bin/bash)
+==36038==    by 0x14AE57: print_simple_command (in /usr/bin/bash)
+==36038==    by 0x14F903: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 128 bytes in 8 blocks are still reachable in loss record 119 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x15C2D4: copy_word_list (in /usr/bin/bash)
+==36038==    by 0x17A74F: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 133 bytes in 13 blocks are still reachable in loss record 120 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B7AE: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 144 bytes in 9 blocks are still reachable in loss record 121 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x140C67: ??? (in /usr/bin/bash)
+==36038==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 144 bytes in 9 blocks are still reachable in loss record 122 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x148045: alloc_word_desc (in /usr/bin/bash)
+==36038==    by 0x174FE1: ??? (in /usr/bin/bash)
+==36038==    by 0x176148: ??? (in /usr/bin/bash)
+==36038==    by 0x17742D: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 144 bytes in 9 blocks are still reachable in loss record 123 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x176BD0: ??? (in /usr/bin/bash)
+==36038==    by 0x17A90E: ??? (in /usr/bin/bash)
+==36038==    by 0x14FB29: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038== 
+==36038== 176 bytes in 11 blocks are still reachable in loss record 124 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1482D9: make_word_list (in /usr/bin/bash)
+==36038==    by 0x148AB8: make_simple_command (in /usr/bin/bash)
+==36038==    by 0x14353F: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 185 bytes in 2 blocks are still reachable in loss record 125 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15806D: ??? (in /usr/bin/bash)
+==36038==    by 0x1A76E0: set_shellopts (in /usr/bin/bash)
+==36038==    by 0x138DFD: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 192 bytes in 4 blocks are still reachable in loss record 126 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AC4A: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 192 bytes in 6 blocks are still reachable in loss record 127 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x183457: array_create_element (in /usr/bin/bash)
+==36038==    by 0x183987: array_insert (in /usr/bin/bash)
+==36038==    by 0x15AF24: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 256 bytes in 1 blocks are still reachable in loss record 128 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36038==    by 0x13C3B7: ??? (in /usr/bin/bash)
+==36038==    by 0x13F5C9: ??? (in /usr/bin/bash)
+==36038==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 281 bytes in 1 blocks are definitely lost in loss record 129 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x19196E: set_default_locale (in /usr/bin/bash)
+==36038==    by 0x136C8A: main (in /usr/bin/bash)
+==36038== 
+==36038== 288 bytes in 6 blocks are still reachable in loss record 130 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AB95: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 320 bytes in 10 blocks are still reachable in loss record 131 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x158D55: make_new_array_variable (in /usr/bin/bash)
+==36038==    by 0x158DA7: ??? (in /usr/bin/bash)
+==36038==    by 0x15B30B: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 352 bytes in 11 blocks are still reachable in loss record 132 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B112: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 496 bytes in 1 blocks are still reachable in loss record 133 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36038==    by 0x140A3A: ??? (in /usr/bin/bash)
+==36038==    by 0x142EC7: yyparse (in /usr/bin/bash)
+==36038==    by 0x13929A: parse_command (in /usr/bin/bash)
+==36038==    by 0x1393A6: read_command (in /usr/bin/bash)
+==36038==    by 0x1395C9: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 512 bytes in 1 blocks are still reachable in loss record 134 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36038==    by 0x17B599: phash_insert (in /usr/bin/bash)
+==36038==    by 0x193041: search_for_command (in /usr/bin/bash)
+==36038==    by 0x14DF9D: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x14FDEE: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038== 
+==36038== 645 bytes in 1 blocks are still reachable in loss record 135 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17E92C: fd_to_buffered_stream (in /usr/bin/bash)
+==36038==    by 0x17EF54: with_input_from_buffered_stream (in /usr/bin/bash)
+==36038==    by 0x137DC4: main (in /usr/bin/bash)
+==36038== 
+==36038== 912 bytes in 1 blocks are still reachable in loss record 136 of 152
+==36038==    at 0x4A3DE3D: realloc (vg_replace_malloc.c:1437)
+==36038==    by 0x198558: xrealloc (in /usr/bin/bash)
+==36038==    by 0x159B62: ??? (in /usr/bin/bash)
+==36038==    by 0x14DFD1: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 976 bytes in 76 blocks are still reachable in loss record 137 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544D7: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 976 bytes in 76 blocks are still reachable in loss record 138 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x157FED: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 1,024 bytes in 1 blocks are still reachable in loss record 139 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x147FC1: cmd_init (in /usr/bin/bash)
+==36038==    by 0x137690: main (in /usr/bin/bash)
+==36038== 
+==36038== 1,024 bytes in 1 blocks are still reachable in loss record 140 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x147FDD: cmd_init (in /usr/bin/bash)
+==36038==    by 0x137690: main (in /usr/bin/bash)
+==36038== 
+==36038== 1,024 bytes in 1 blocks are still reachable in loss record 141 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17F291: uwp_init (in /usr/bin/bash)
+==36038==    by 0x137695: main (in /usr/bin/bash)
+==36038== 
+==36038== 1,056 bytes in 22 blocks are still reachable in loss record 142 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15B7C8: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 2,048 bytes in 2 blocks are still reachable in loss record 143 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B70C: hash_create (in /usr/bin/bash)
+==36038==    by 0x158DEF: make_new_assoc_variable (in /usr/bin/bash)
+==36038==    by 0x15B6A9: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 2,200 bytes in 1 blocks are still reachable in loss record 144 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x198577: xrealloc (in /usr/bin/bash)
+==36038==    by 0x17E446: ??? (in /usr/bin/bash)
+==36038==    by 0x17E9B8: fd_to_buffered_stream (in /usr/bin/bash)
+==36038==    by 0x17EF54: with_input_from_buffered_stream (in /usr/bin/bash)
+==36038==    by 0x137DC4: main (in /usr/bin/bash)
+==36038== 
+==36038== 2,816 bytes in 88 blocks are still reachable in loss record 145 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17BBFB: hash_insert (in /usr/bin/bash)
+==36038==    by 0x158008: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 3,046 bytes in 72 blocks are still reachable in loss record 146 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x156DA1: make_variable_value (in /usr/bin/bash)
+==36038==    by 0x15806D: ??? (in /usr/bin/bash)
+==36038==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 3,648 bytes in 76 blocks are still reachable in loss record 147 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x1544C3: ??? (in /usr/bin/bash)
+==36038==    by 0x157FCF: ??? (in /usr/bin/bash)
+==36038==    by 0x15805C: ??? (in /usr/bin/bash)
+==36038==    by 0x15AD0C: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 4,016 bytes in 74 blocks are still reachable in loss record 148 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x15AD62: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 4,024 bytes in 75 blocks are still reachable in loss record 149 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x155585: ??? (in /usr/bin/bash)
+==36038==    by 0x159B3E: ??? (in /usr/bin/bash)
+==36038==    by 0x14DFD1: ??? (in /usr/bin/bash)
+==36038==    by 0x15138C: execute_command_internal (in /usr/bin/bash)
+==36038==    by 0x1519D9: execute_command (in /usr/bin/bash)
+==36038==    by 0x139664: reader_loop (in /usr/bin/bash)
+==36038==    by 0x137EF8: main (in /usr/bin/bash)
+==36038== 
+==36038== 4,096 bytes in 1 blocks are still reachable in loss record 150 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36038==    by 0x157FA9: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 4,096 bytes in 1 blocks are still reachable in loss record 151 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36038==    by 0x157F51: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== 8,192 bytes in 1 blocks are still reachable in loss record 152 of 152
+==36038==    at 0x4A39045: malloc (vg_replace_malloc.c:381)
+==36038==    by 0x1984F3: xmalloc (in /usr/bin/bash)
+==36038==    by 0x17B74B: hash_create (in /usr/bin/bash)
+==36038==    by 0x157F8A: ??? (in /usr/bin/bash)
+==36038==    by 0x15AAAB: initialize_shell_variables (in /usr/bin/bash)
+==36038==    by 0x138DC9: ??? (in /usr/bin/bash)
+==36038==    by 0x137544: main (in /usr/bin/bash)
+==36038== 
+==36038== LEAK SUMMARY:
+==36038==    definitely lost: 281 bytes in 1 blocks
+==36038==    indirectly lost: 0 bytes in 0 blocks
+==36038==      possibly lost: 0 bytes in 0 blocks
+==36038==    still reachable: 53,236 bytes in 882 blocks
+==36038==         suppressed: 0 bytes in 0 blocks
+==36038== 
+==36038== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)
