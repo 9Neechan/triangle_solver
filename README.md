@@ -1,5 +1,5 @@
 # triangle_solver
-## Solvespace lib - based triangle solver with picture export
+## Solvespace - based triangle solver with picture export
 
 ## How to build?
 ### 0. Be sure you are using linux (ubuntu pref.) and you have cmake amd C++ compiler installed
