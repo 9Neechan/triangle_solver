@@ -12,7 +12,7 @@ RUN apt-get update && apt-get update && apt-get install -y git build-essential l
 
 RUN LD_LIBRARY_PATH=/usr/local/lib && cd /usr/src/gtest && cmake CMakeLists.txt && make && cd /usr/src/gtest/lib && cp *.a /usr/lib
 
-RUN unzip solvespace-3.0 && cd /usr/triangle/solvespace-3.0 && git submodule update --init && mkdir build && cd build && cmake .. && make && make install
+RUN cd /usr/triangle && unzip solvespace-3.0 && cd /usr/triangle/solvespace-3.0 && git submodule update --init && mkdir build && cd build && cmake .. && make && make install
 
 RUN cd /usr/local/lib && cp libslvs.* /usr/lib
 
