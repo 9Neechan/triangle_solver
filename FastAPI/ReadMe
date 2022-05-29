@@ -1,0 +1,16 @@
+How to install and use the server:
+
+Clone this folder and open in any Python IDE.
+
+In Terminal write and add this libs to the project:
+
+pip install fastapi
+pip install uvicorn
+pip3 install python-solvespace==3.0.5
+
+To run the server:
+
+cd/*path to this repo*/FastAPI
+uvicorn main:app --reload
+
+In browser open http://127.0.0.1:8000/docs and enjoy creating triangles.
