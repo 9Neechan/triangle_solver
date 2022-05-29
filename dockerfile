@@ -18,6 +18,6 @@ RUN cd /usr/local/lib && cp libslvs.* /usr/lib
 
 RUN cd /usr/triangle/tests && mkdir build && cd build && cmake .. && make && ./tests && echo "TESTS COMPLETED"
 
-RUN cd /usr/triangle/build && cmake .. && make
+RUN cd /usr/triangle/build && cmake .. && make && chmod +x /usr/triangle/build/run
 
 ENTRYPOINT [ "/usr/triangle/build/run" ]
